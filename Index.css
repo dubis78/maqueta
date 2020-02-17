@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} /*Selector de reset*/
+
+body{
+display: flex;
+font-size: 18px;
+flex-flow: column;
+height: 100vh; /*altura relativa con respecto al viewport*/
+
+}
+
+.header{
+    outline:1px solid grey;
+    height: 3rem;/*medida con respecto al padre*/
+}
+
+.container{
+    display: flex;
+    outline:1px solid rgb(189, 161, 209);
+    height: inherit; /*altura heredada de su padre en este caso el header*/
+}
+
+.content{
+    outline:1px solid yellowgreen;
+    flex: 1 1 auto;
+}
+
+.aside{
+    outline:1px solid rgb(207, 120, 149);
+    flex: 0 0 25%;
+}
+
+.footer{
+    outline:1px solid lightblue;
+    height: 6rem;
+    margin-top: auto;
+}
+
+.menu{
+    display: flex;
+
+}
+
+.menu-item{
+    list-style: none;
+    flex: 1; /* a todos los contenidos darle el mismo espacio*/
+    outline: 1px solid rebeccapurple;
+    line-height: 3rem;
+    text-align: center;
+    transition: flex .25s;
+}
+
+.menu-item:hover{
+    flex:8;
+}
